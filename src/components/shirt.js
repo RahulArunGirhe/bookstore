@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useInsertionEffect } from "react";
 
 const Shirt = ({ Image, Title, Description, Price }) => {
   // Shirt(props) {
   //   const  = props;
   const handleClick = () => {
-    console.log();
+    console.log("WEL-COME");
   };
   return (
     <article className="product">
@@ -12,7 +12,11 @@ const Shirt = ({ Image, Title, Description, Price }) => {
       <h2 className="title"> {Title}</h2>
       <p className="description"> {Description}</p>
       <h3 className="price"> {Price}</h3>
-      <button className="button" onClick={() => handleClick(2, 5)}>
+      <button className="button" onClick={() => handleClick()}>
+        click it
+      </button>
+
+      <button className="button" onClick={() => alert("THANK YOU")}>
         click it
       </button>
     </article>
