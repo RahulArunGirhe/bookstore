@@ -15,10 +15,6 @@ const Shirt = ({ Image, Title, Description, Price }) => {
       <button className="button" onClick={() => handleClick()}>
         click it
       </button>
-
-      <button className="button" onClick={() => alert("THANK YOU")}>
-        click it
-      </button>
     </article>
   );
 };
